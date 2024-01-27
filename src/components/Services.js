@@ -12,7 +12,7 @@ const Services = () => {
             {
                 services.map(
                     (service, key)=>(
-                        <Grid item xl={3} lg={4} md={6} xs={12}  padding={3} key={key}>
+                        <Grid item xl={3} lg={4} md={6} sm={6} xs={12}  padding={3} key={key}>
                             <FeatureCard name={service.name} icon={service.icon}  description={service.description} link={service.link} key={key} />
                         </Grid>
                     ))

@@ -8,6 +8,7 @@ import SectionHeading from '@/components/SectionHeading'
 import ProcessCard from '@/components/ProcessCard'
 import {services} from '@/data/services'
 import TechnologyCard from '@/components/TechnologyCard'
+import Footer from '@/components/Footer'
 const service = services[0];
 const FeatureDescription = () => {
   return (
@@ -53,6 +54,7 @@ const FeatureDescription = () => {
 
         }
       </Grid>
+      <Footer/>
     </div>
   )
 }

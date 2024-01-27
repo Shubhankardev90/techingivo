@@ -62,6 +62,9 @@ const Theme = createTheme({
       display:'block',
       marginTop:'-0.5rem',
       marginBottom:'2rem',
+      '@media (max-width: 650px)':{
+        fontSize:'1.5rem'
+      }
     },
     h1: {
       fontSize: '2.5rem', // Your heading 1 font size

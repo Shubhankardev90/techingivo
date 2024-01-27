@@ -26,6 +26,12 @@
         margin-left: auto;
         margin-right: auto;
     }
+    .leftContent{
+        order: 2;
+    }
+    .rightContent{
+        order: 1;
+    }
 }
 
 @media (max-width:650px){

@@ -2,7 +2,7 @@ export const services = [
     {
         name:"Web Development",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",
-        link:"/service/website-development",
+        link:"/services/website-development",
         processes : [
             { id: '01', title: "Create Backlog", description: ["Collaborate to identify features and requirements.", "Prioritize items in the Product Backlog."] },
             { id: '02', title: "Sprint Planning", description: ["Plan short development cycles for iterative progress.", "Select user stories and define specific goals for the sprint."] },
@@ -32,27 +32,27 @@ export const services = [
     {
         name:"App Development",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",
-        link:"/service/app-development"
+        link:"/services/app-development"
     },
     {
         name:"Software Development",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",
-        link:"/service/software-development"
+        link:"/services/software-development"
     },
     {
         name:"Digital Marketing",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",
-        link:"/service/digital-marketing"
+        link:"/services/digital-marketing"
     },
     {
         name:"Website Designing",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",
-        link:"/service/website-designing"
+        link:"/services/website-designing"
     },
     {
         name:"Logo Designing",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",
-        link:"/service/logo-designing"
+        link:"/services/logo-designing"
     },
    
 ];
