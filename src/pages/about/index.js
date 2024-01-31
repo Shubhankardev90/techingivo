@@ -1,3 +1,4 @@
+import AnimationWrapper from '@/components/Animation'
 import Breadcrumb from '@/components/Breadcrumb'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
@@ -6,11 +7,11 @@ import Services from '@/components/Services'
 import { Box, Grid, Typography } from '@mui/material'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 
 const about = () => {
+
   return (
-    <>
+    <AnimationWrapper>
       <Box px={3}>
         <Box position="fixed" top="0" left="0" zIndex={999} width="100%" maxWidth={1600}>
           <Header />
@@ -45,11 +46,11 @@ const about = () => {
               </Grid>
             </Grid>
           </Box>
-          <Services/>
+          <Services />
         </Box>
       </Box>
       <Footer />
-    </>
+    </AnimationWrapper>
   )
 }
 
