@@ -106,9 +106,9 @@ const Home = () => {
       <Box position="fixed" top="0" left="0" zIndex={999} width="100%" maxWidth={1600}>
         <Header />
       </Box>
-      <Hero />
+      <Hero/>
       <Box mt={4}>
-        <Services />
+      <Services />
       </Box>
       <SectionHeading mainHeading="Our Process" description="We follow agile methodology" />
       <Grid container px={3} mb={3}>

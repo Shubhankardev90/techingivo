@@ -61,7 +61,7 @@ const Schedule = () => {
                     <Grid item lg={6} md={12} sm={12} xs={12}>
                         <Card variant='elevation'>
                             <CardContent>
-                                <Typography fontSize="2rem" mb={2}>Let's connect with us</Typography>
+                                <Typography fontSize="2rem" mb={2}>Contact Us</Typography>
                                 <form onSubmit={handleSubmit}>
                                     <TextField
                                         style={{ marginBottom: '1rem' }}
