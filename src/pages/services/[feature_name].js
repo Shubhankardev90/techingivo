@@ -26,12 +26,12 @@ const FeatureDescription = () => {
       <Box pt={5} px={3} mt={5} mb={2}>
         <Breadcrumb activeLink={service.name} />
         <Grid container py={3}>
-          <Grid item xs={6}>
+          <Grid item lg={6} md={6} sm={12} xs={12}>
             <Box className={FeatureDescriptionStyles.mainImage} >
               <Image src='/services/web-development.png' alt="web-development" fill objectFit='contain' />
             </Box>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item lg={6} md={6} sm={12} xs={12}>
             <Typography variant='h2' mb={2}>Web Development</Typography>
             <Typography variant='body1'>
               Web development is the process of creating and maintaining websites or web applications. It encompasses a range of tasks, including web design, content creation, client-side scripting, server-side scripting, and network security configuration. Web developers use various programming languages, such as HTML, CSS, and JavaScript, to build the structure, style, and functionality of a website. Additionally, server-side technologies like PHP, Python, or Ruby are often employed to handle database interactions and other server-related tasks. The field of web development constantly evolves with advancements in technology, leading to the adoption of new frameworks, libraries, and tools. Effective web development requires a combination of creativity, problem-solving skills, and a solid understanding of programming concepts to deliver engaging and functional online experiences.
@@ -43,7 +43,7 @@ const FeatureDescription = () => {
       <Grid container px={3} mb={3}>
         {
           service.processes && service.processes.map((_process, key)=>(
-            <Grid item xs={4} key={key} padding={2}>
+            <Grid item xl={3} lg={4} md={6} sm={12} key={key} padding={2}>
               <ProcessCard index ={_process.id} title={_process.title} description={_process.description} />
             </Grid>
           ))
@@ -54,7 +54,7 @@ const FeatureDescription = () => {
         {
           
           service.technologies && service.technologies.map((technology, key)=>(
-            <Grid item xs={3} key={key} padding={1}>
+            <Grid item xl={3} lg={4} md={6} sm={12} key={key} padding={1}>
               <TechnologyCard name={technology.name} description={technology.description} icon={technology.icon} />
             </Grid>
           ))
