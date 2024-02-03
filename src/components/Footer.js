@@ -82,7 +82,7 @@ const Footer = () => {
                             <Box display="flex" flexDirection="column" rowGap="0.3rem" mt={2}>
                                 {
                                     footerLink.links.map((link, key)=>(
-                                        <Link href={link.link} key={key}>{link.name}</Link>
+                                        <Link href={link.link} key={key} className={FooterStyles.footerLink}>{link.name}</Link>
                                     ))
                                 }
                             </Box>

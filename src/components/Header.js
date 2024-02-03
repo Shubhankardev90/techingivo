@@ -47,7 +47,7 @@ const Header = () => {
             <Grid item sm={9} xs={4} pr={2}>
                 <Button className={HeaderStyles.menuButton} onClick={toggleMenu}>{menuVisible ? <Close fontSize='large'/> : <Menu fontSize='large' />}</Button>
                 <Box className={menuVisible ? HeaderStyles.navLinksOpen : HeaderStyles.navLinks}>
-                    {navLinks.map((link, key)=>(<Link href={link.path} className={pathname == link.path ? HeaderStyles.activeNavLink :HeaderStyles.navLink} key={key}>{link.name}</Link>))}
+                    {navLinks.map((link, key)=>(<Link href={link.path}  className={pathname == link.path ? HeaderStyles.activeNavLink :HeaderStyles.navLink} key={key}>{link.name}</Link>))}
                 </Box>
             </Grid>
         </Grid>

@@ -11,15 +11,17 @@
 .navLink{
     color: #413f3f !important;
     font-weight: 500 !important;
+    text-transform: uppercase !important;
 }
 .activeNavLink{
     color: rgb(0, 76, 255) !important;
     font-weight: 500 !important;
+    text-transform: uppercase !important;
 }
 
 .navLink:hover{
     color: rgb(0, 76, 255) !important;
-    transition: 0.3s !important;
+    transition: 0.5s !important;
 }
 
 @media(max-width:650px){
