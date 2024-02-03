@@ -61,7 +61,7 @@ const Theme = createTheme({
       fontSize:'2rem',
       display:'block',
       marginTop:'-0.5rem',
-      marginBottom:'2rem',
+      marginBottom:'1rem',
       '@media (max-width: 650px)':{
         fontSize:'1.5rem'
       }

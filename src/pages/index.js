@@ -107,9 +107,7 @@ const Home = () => {
         <Header />
       </Box>
       <Hero/>
-      <Box mt={4}>
       <Services />
-      </Box>
       <SectionHeading mainHeading="Our Process" description="We follow agile methodology" />
       <Grid container px={3} mb={3}>
         {
