@@ -10,6 +10,8 @@ import {services} from '@/data/services'
 import TechnologyCard from '@/components/TechnologyCard'
 import Footer from '@/components/Footer'
 import { useRouter } from 'next/router'
+import LottieAnimation from '@/components/Lottie'
+import FeatureDescriptionLottieData from '../../../public/feature_description.json'
 const FeatureDescription = () => {
   const router = useRouter();
   const {feature_name} = router.query; 
@@ -28,7 +30,8 @@ const FeatureDescription = () => {
         <Grid container py={3}>
           <Grid item lg={6} md={6} sm={12} xs={12}>
             <Box className={FeatureDescriptionStyles.mainImage} >
-              <Image src='/services/web-development.png' alt="web-development" fill objectFit='contain' />
+              {/* <Image src='/services/web-development.png' alt="web-development" fill objectFit='contain' /> */}
+              <LottieAnimation animationData={FeatureDescriptionLottieData} />
             </Box>
           </Grid>
           <Grid item lg={6} md={6} sm={12} xs={12}>
@@ -54,7 +57,7 @@ const FeatureDescription = () => {
         {
           
           service.technologies && service.technologies.map((technology, key)=>(
-            <Grid item xl={3} lg={4} md={6} sm={12} key={key} padding={1}>
+            <Grid item xl={3} lg={3} md={4} sm={12} key={key} padding={1}>
               <TechnologyCard name={technology.name} description={technology.description} icon={technology.icon} />
             </Grid>
           ))
