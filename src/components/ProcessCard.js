@@ -5,27 +5,25 @@ import InViewAnimation from './InViewAnimation'
 
 const ProcessCard = ({ index, title, description }) => {
     return (
-        <InViewAnimation>
-            <Card variant='outlined' style={{ height: "100%" }}>
-                <CardContent>
-                    <Box display="flex" columnGap={1} alignItems="center">
-                        <Typography variant="h1" color="primary">{index}</Typography>
-                        <Typography variant='h3'>{title}</Typography>
-                    </Box>
-                    <ul style={{ listStyleType: 'circle', marginLeft: "1rem" }}>
-                        {
-                            description.map((_description, key) => (
-                                <li key={key}>
-                                    <Typography variant="body1">
-                                        {_description}
-                                    </Typography>
-                                </li>
-                            ))
-                        }
-                    </ul>
-                </CardContent>
-            </Card>
-        </InViewAnimation>
+        <Card variant='outlined' style={{ height: "100%" }}>
+            <CardContent>
+                <Box display="flex" columnGap={1} alignItems="center">
+                    <Typography variant="h1" color="primary">{index}</Typography>
+                    <Typography variant='h5'>{title}</Typography>
+                </Box>
+                <ul style={{ listStyleType: 'circle', marginLeft: "1rem" }}>
+                    {
+                        description.map((_description, key) => (
+                            <li key={key}>
+                                <Typography variant="body1">
+                                    {_description}
+                                </Typography>
+                            </li>
+                        ))
+                    }
+                </ul>
+            </CardContent>
+        </Card>
     )
 }
 

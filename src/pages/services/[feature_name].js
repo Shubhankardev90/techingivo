@@ -43,17 +43,17 @@ const FeatureDescription = () => {
         </Grid>
       </Box>
       <SectionHeading  mainHeading="Our Process" description="We follow agile methodology" />
-      <Grid container px={3} mb={3}>
+      <Grid container px={2} mb={3}>
         {
           service.processes && service.processes.map((_process, key)=>(
-            <Grid item xl={3} lg={4} md={6} sm={12} key={key} padding={2}>
+            <Grid item xl={3} lg={4} md={6} sm={12} key={key} padding={1}>
               <ProcessCard index ={_process.id} title={_process.title} description={_process.description} />
             </Grid>
           ))
         }
       </Grid>
       <SectionHeading mainHeading="Our Technologies" description="What we use ?" /> 
-      <Grid container px={3} mb={2}>
+      <Grid container px={2} mb={2}>
         {
           
           service.technologies && service.technologies.map((technology, key)=>(

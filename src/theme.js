@@ -87,7 +87,7 @@ const Theme = createTheme({
       color: '#333333', // Your heading 2 color
     },
     h5: {
-      fontSize: '1.1rem', // Your heading 2 font size
+      fontSize: '1.3rem', // Your heading 2 font size
       fontWeight: 500, // Your heading 2 font weight
       color: '#333333', // Your heading 2 color
     },

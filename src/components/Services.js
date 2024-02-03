@@ -8,11 +8,11 @@ const Services = () => {
     return (
         <Box py={3} px={3}>
             <SectionHeading mainHeading="Our Services" description="What we are offering ?" />
-            <Grid container spacing={{ xl: 3, lg: 3, md: 2, sm: 1}}>
+            <Grid container>
                 {
                     services.map(
                         (service, key) => (
-                            <Grid item xl={3} lg={4} md={6} sm={6} xs={12} key={key}>
+                            <Grid item xl={3} lg={4} md={6} sm={6} xs={12} key={key} padding={1}>
                                 <FeatureCard name={service.name} icon={service.icon} description={service.description} link={service.link} key={key} />
                             </Grid>
                         ))

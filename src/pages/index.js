@@ -109,10 +109,10 @@ const Home = () => {
       <Hero/>
       <Services />
       <SectionHeading mainHeading="Our Process" description="We follow agile methodology" />
-      <Grid container px={3} mb={3}>
+      <Grid container mb={3} px={2}>
         {
           itConsultancySteps.map((_process, key) => (
-            <Grid item xl={2} lg={3} md={4} sm={6} xs={12} key={key} padding={2}>
+            <Grid item xl={2} lg={3} md={4} sm={6} xs={12} key={key} padding={1}>
               <ProcessCard index={_process.step} title={_process.title} description={_process.description} />
             </Grid>
           ))
