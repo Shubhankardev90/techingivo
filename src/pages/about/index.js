@@ -13,13 +13,13 @@ import AboutAnimationData from '../../../public/about.json'
 const about = () => {
   return (
     <>
-      <Box px={3}>
+      <Box>
         <Box position="fixed" top="0" left="0" zIndex={999} width="100%" maxWidth={1600}>
           <Header />
         </Box>
         <Box py={5} mt={5}>
+          <Box my={4} px={3}>
           <Breadcrumb activeLink='about' />
-          <Box my={4}>
             <SectionHeading mainHeading="Our Company" description="Learn more about our company" />
             <Grid container>
               <Grid item lg={6} md={12} sm={12} xs={12}>
