@@ -43,16 +43,14 @@
     }
 }
 @media (max-width: 500px){
-    .hero{
-        min-height: 100vh !important;
-        display: flex;
-        align-items: center;
-    }
     .rightContent{
         margin-bottom: 3rem;
     }
     .cta{
         margin-top:2rem !important;
+    }
+    .hero{
+        padding: 6rem 1rem 0 1rem !important;
     }
 }
 
