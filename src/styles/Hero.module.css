@@ -1,54 +1,56 @@
 .hero{
-    padding:3rem 3rem 0 3rem;
+    padding: 3rem 3rem 0 3rem !important;
 }
 .heroContent{
     display: flex;
     height: 100%;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center !important;
 }
 .cta{
-    width: 18rem;
-    margin-top: 2rem;
-    border-radius: 5px;
-    padding: 0.6rem 2rem;
+    width: 18rem !important;
+    margin-top: 2rem !important;
+    border-radius: 5px !important;
+    padding: 0.6rem 2rem !important;
 }
 
 .image{
-    animation: scaleAnimation 10s linear infinite;
+    animation: scaleAnimation 10s linear infinite !important;
 }
 
-@media(max-width:1060px){
+@media (max-width: 1060px){
     .heroContent{
-        text-align: center;
+        text-align: center !important;
     }
     .cta{
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
     .leftContent{
-        order: 2;
+        order: 2 !important;
     }
     .rightContent{
-        order: 1;
+        order: 1 !important;
     }
 }
 
-@media (max-width:650px){
+@media (max-width: 650px){
     .leftContent{
-        order: 2;
+        order: 2 !important;
     }
     .rightContent{
-        order: 1;
+        order: 1 !important;
     }
 }
 
 @keyframes scaleAnimation{
     0%{
-        transform:scale(1.1);
-    }50%{
-        transform: scale(1);
-    }100%{
-        transform: scale(1.1)
+        transform: scale(1.1) !important;
+    }
+    50%{
+        transform: scale(1) !important;
+    }
+    100%{
+        transform: scale(1.1) !important;
     }
 }
