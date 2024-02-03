@@ -49,7 +49,7 @@ const Theme = createTheme({
         fontWeight: 500, // Your heading 2 font weight
         color: '#333333', // Your heading 2 color
         '@media(max-width:650px)':{
-            fontSize:'1rem'
+            fontSize:'1.3rem',
         }
     },
     sectionHeading:{
