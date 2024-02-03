@@ -4,6 +4,8 @@ import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import { Box, Button, Card, CardContent, Grid, TextField, Typography } from '@mui/material';
 import Image from 'next/image';
+import ContactAnimationData from '../../../public/contact.json'
+import LottieAnimation from '@/components/Lottie';
 
 const Schedule = () => {
     const [formData, setFormData] = useState({
@@ -55,7 +57,8 @@ const Schedule = () => {
                 <Grid container>
                     <Grid item lg={6} md={12} sm={12} xs={12} alignItems="center">
                         <Box position="relative" height="80%" my={2} minHeight="30vh">
-                            <Image src="/support.svg" fill objectFit='contain' />
+                            {/* <Image src="/support.svg" fill objectFit='contain' /> */}
+                            <LottieAnimation animationData={ContactAnimationData} />
                         </Box>
                     </Grid>
                     <Grid item lg={6} md={12} sm={12} xs={12}>

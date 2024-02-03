@@ -9,8 +9,15 @@ import ProcessCard from '@/components/ProcessCard'
 import {services} from '@/data/services'
 import TechnologyCard from '@/components/TechnologyCard'
 import Footer from '@/components/Footer'
-const service = services[0];
+import { useRouter } from 'next/router'
 const FeatureDescription = () => {
+  const router = useRouter();
+  const {feature_name} = router.query; 
+  const service = services.find(s => s.link === `/services/${feature_name}`);
+
+  if (!service) {
+    return <div>Service not found</div>;
+  }
   return (
     <div>
       <Box position="fixed" top="0" left="0" zIndex={999} width="100%" maxWidth={1600}>

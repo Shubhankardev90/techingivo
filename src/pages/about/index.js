@@ -1,12 +1,14 @@
 import Breadcrumb from '@/components/Breadcrumb'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
+import LottieAnimation from '@/components/Lottie'
 import SectionHeading from '@/components/SectionHeading'
 import Services from '@/components/Services'
 import { Box, Grid, Typography } from '@mui/material'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import AboutAnimationData from '../../../public/about.json'
 
 const about = () => {
   return (
@@ -22,7 +24,7 @@ const about = () => {
             <Grid container>
               <Grid item lg={6} md={12} sm={12} xs={12}>
                 <Box position="relative" width="100%" style={{ height: '100%', minHeight: '30vh' }}>
-                  <Image src="/hero.png" fill objectFit='contain' />
+                  <LottieAnimation animationData={AboutAnimationData} />
                 </Box>
               </Grid>
               <Grid item lg={6} md={12} sm={12} xs={12}>
