@@ -18,7 +18,7 @@ const about = () => {
           <Header />
         </Box>
         <Box py={5} mt={5}>
-          <Box my={4} px={3}>
+          <Box my={4} px={2}>
           <Breadcrumb activeLink='about' />
             <SectionHeading mainHeading="Our Company" description="Learn more about our company" />
             <Grid container>
