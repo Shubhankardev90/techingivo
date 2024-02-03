@@ -35,7 +35,8 @@
         right: -100vh !important;
     }
     .menuButton{
-        display: block !important;
+        display: flex !important;
+        align-items: center !important;
         margin-left: auto !important;
         height: 100% !important;
     }
