@@ -49,7 +49,7 @@ const Hero = () => {
             <Grid item md={6} sm={12} xs={12} px={3} className={HeroStyles.rightContent}>
                 <Box className={FloatingStyles.floatingShape}><FloatingCircle startColor="#0074cc" endColor="#008080"/></Box>
                 {/* <Image src='/hero.png' height="100" width="70" layout='responsive' className={HeroStyles.image} alt="Techingivo Hero" priority /> */}
-                <LottieAnimation animationData={HeroAnimationData} loop={false} />
+                <LottieAnimation animationData={HeroAnimationData} />
                 <Box className={FloatingStyles.floatingShape} bottom="2rem" right="2rem"><FloatingTriangle height={100} width={100} startColor="#0074cc" endColor="#008080"/></Box>
             </Grid>
         </Grid>
