@@ -72,8 +72,10 @@ const Footer = () => {
                     <Box position="relative" className={FooterStyles.footerLogo}>
                         <Image src='/logo.png' fill objectFit='contain' style={{mixBlendMode:'darken'}} />
                     </Box>
-                    <Typography pl={3} mt={1}><Link href="phone: +91 7982098409"> <Phone/>: +91 7982098409</Link></Typography>
-                    <Typography pl={3}><Link href="mail-to:techingivo@gmail.com"> <Email/>: techingivo@gmail.com</Link></Typography>
+                    <Box textAlign="left">
+                    <Typography mt={1}><Link href="phone: +91 7982098409"> <Phone/>: +91 7982098409</Link></Typography>
+                    <Typography><Link href="mail-to:techingivo@gmail.com"> <Email/>: techingivo@gmail.com</Link></Typography>
+                    </Box>
                 </Grid>
                 {
                     footerLinks.map((footerLink, key) => (
