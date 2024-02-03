@@ -7,6 +7,7 @@ import FloatingStyles from '@/styles/FloatingShape.module.css'
 import FloatingTriangle from './FloatingTriangle'
 import LottieAnimation from './Lottie'
 import HeroAnimationData from '../../public/hero.json'
+import { motion } from 'framer-motion';
 
 const services = [
     "Software Development",
@@ -24,17 +25,25 @@ const Hero = () => {
         <Grid container>
             <Grid item md={6} sm={12} xs={12} alignContent="center" className={HeroStyles.leftContent}>
                 <Box className={HeroStyles.heroContent}>
-                    <Typography variant="heroHeader">Empowering Tomorrow's Technology Today</Typography>
-                    <Typography variant="heroSecondaryHeader">- Your IT solution partner</Typography>
-                    <Typography variant="heroText" mt={3}>
-                        {services.map((service, key) => (
-                            <span key={key}>
-                            {service}
-                            {key !== services.length - 1 && " | "} {/* Add pipe only if it's not the last element */}
-                            </span>
-                        ))}
-                    </Typography>   
-                    <Button variant="contained" className={HeroStyles.cta}>Schedule a Call</Button>             
+                    <motion.div initial={{x: '-100%'}} animate={{x: 0, transition: { duration: 0.5, ease: 'easeInOut' }}} exit={{x:'-100%'}}>
+                        <Typography variant="heroHeader">Empowering Tomorrow's Technology Today</Typography>
+                    </motion.div>
+                    <motion.div initial={{x: '-100%'}} animate={{x: 0, transition: { duration: 0.5, ease: 'easeInOut' }}} exit={{x:'-100%'}}>
+                        <Typography variant="heroSecondaryHeader">- Your IT solution partner</Typography>
+                    </motion.div>
+                    <motion.div initial={{x: '-100%'}} animate={{x: 0, transition: { duration: 0.5, ease: 'easeInOut' }}} exit={{x:'-100%'}}>
+                        <Typography variant="heroText" mt={3}>
+                            {services.map((service, key) => (
+                                <span key={key}>
+                                {service}
+                                {key !== services.length - 1 && " | "} {/* Add pipe only if it's not the last element */}
+                                </span>
+                            ))}
+                        </Typography> 
+                    </motion.div>  
+                    <motion.div initial={{x: '-100%'}} animate={{x: 0, transition: { duration: 0.5, ease: 'easeInOut' }}} exit={{x:'-100%'}}>
+                        <Button variant="contained" className={HeroStyles.cta}>Schedule a Call</Button>  
+                    </motion.div>           
                 </Box>
             </Grid>
             <Grid item md={6} sm={12} xs={12} px={3} className={HeroStyles.rightContent}>

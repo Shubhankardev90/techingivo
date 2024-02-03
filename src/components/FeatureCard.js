@@ -1,11 +1,12 @@
 import { Box, Button, Card, CardContent, CardHeader, CardMedia, Typography } from '@mui/material'
 import Link from 'next/link'
 import React from 'react'
+import {motion} from 'framer-motion'
 
 const FeatureCard = ({name, icon, description, link}) => {
 
   return (
-    <div>
+    <motion.div initial="hidden" whileInView={{opacity:"1"}}>
         <Card variant='elevation'>
         <CardMedia
               sx={{ height: 140 }}
@@ -20,7 +21,7 @@ const FeatureCard = ({name, icon, description, link}) => {
                 </Box>
             </CardContent>
         </Card>
-    </div>
+    </motion.div>
   )
 }
 
